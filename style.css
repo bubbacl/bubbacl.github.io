@@ -1,18 +1,39 @@
+:root {
+	--bulma-scheme-main: #F1F6FD;
+	--bulma-title-color: #1D1D1B;
+	--smartycar-secondary-color: #24366C;
+	--smartycar-white: #FFFFFF;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bulma-scheme-main: #1D1D1B;
+    --bulma-title-color: #FFFFFF;
+    --smartycar-secondary-color: #FFFFFF;
+    --smartycar-white: #1D1D1B;
+    --bulma-card-background-color: red;
+  }
+}
+
 body {
 	width: 100%;
 	min-height: 100vh;
 	height: 100%;
 	padding: 24px;
 	background-color: #F1F6FD;
+	background-color: var(--bulma-scheme-main);
 }
 .header {
 	margin-bottom: 24px;
 }
-.header img {
+.header svg {
 	max-width: 160px;
 }
+.header svg .cls-2 {
+	fill: var(--smartycar-secondary-color);
+}
 .header-date {
-	color: #24366C;
+	color: var(--smartycar-secondary-color);
 	font-weight: 700;
 }
 .header-date i {
@@ -38,7 +59,6 @@ body {
 	font-size: 16px;
 	font-weight: 700;
 	text-transform: uppercase;
-	color: #1D1D1B;
 	margin-bottom: 0;
 }
 .card .subtitle {
@@ -57,8 +77,8 @@ body {
 }
 
 #display-time {
-	background-color: #24366C;
-	color: #FFFFFF;
+	background-color: var(--smartycar-secondary-color);
+	color: var(--smartycar-white);
 	display: inline-block;
 	position: absolute;
 	bottom: 24px;
