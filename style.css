@@ -1,0 +1,69 @@
+body {
+	width: 100%;
+	min-height: 100vh;
+	height: 100%;
+	padding: 24px;
+	background-color: #F1F6FD;
+}
+.header {
+	margin-bottom: 24px;
+}
+.header img {
+	max-width: 160px;
+}
+.header-date {
+	color: #24366C;
+	font-weight: 700;
+}
+.header-date i {
+	position: relative;
+    top: 2px;
+    margin-right: 8px;
+}
+
+.card {
+	text-align: center;
+	padding: 24px;
+}
+.card.accent {
+	background-color: #1D73D8;
+	
+}
+.card.accent .title,
+.card.accent .subtitle,
+.card.accent .value {
+	color: #FFFFFF !important;
+}
+.card .title {
+	font-size: 16px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #1D1D1B;
+	margin-bottom: 0;
+}
+.card .subtitle {
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #868E96;
+	margin-bottom: 0;
+}
+.card .value {
+	font-size: 48px;
+	font-weight: 700;
+	color: #1D73D8;
+}
+.success {
+	color: #51CF66;
+}
+
+#display-time {
+	background-color: #24366C;
+	color: #FFFFFF;
+	display: inline-block;
+	position: absolute;
+	bottom: 24px;
+	right: 24px;
+	padding: 8px 16px;
+    font-size: 20px;
+    border-radius: 32px;
+}
